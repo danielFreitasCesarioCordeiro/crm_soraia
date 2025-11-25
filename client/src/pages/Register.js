@@ -19,7 +19,7 @@ const Register = () => {
 
     try {
       await register(name, email, password);
-      navigate('/');
+      navigate('/dashboard');
     } catch (err) {
       setError(err.response?.data?.message || 'Erro ao registrar');
     } finally {
@@ -29,7 +29,15 @@ const Register = () => {
 
   return (
     <div className="auth-container">
-      <div className="auth-card">
+      <div className="auth-header">
+        <Link to="/" className="auth-logo">CRM Soraia</Link>
+        <div className="auth-nav">
+          <Link to="/">Início</Link>
+          <Link to="/login">Login</Link>
+        </div>
+      </div>
+      <div className="auth-body">
+        <div className="auth-card">
         <h1>CRM Soraia</h1>
         <h2>Registro</h2>
         {error && <div className="error-message">{error}</div>}
@@ -69,6 +77,7 @@ const Register = () => {
         <p className="auth-link">
           Já tem uma conta? <Link to="/login">Faça login</Link>
         </p>
+        </div>
       </div>
     </div>
   );

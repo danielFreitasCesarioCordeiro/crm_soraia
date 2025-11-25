@@ -1,16 +1,18 @@
-# CRM Soraia - Open Source
+# CRM Soraia - Open Source 🚀
 
-Um sistema CRM (Customer Relationship Management) completo e open-source construído com Node.js, Express, MongoDB e React.
+Um sistema CRM (Customer Relationship Management) completo e open-source construído com Node.js, Express, MongoDB e React. Interface moderna tipo site profissional.
 
-## 🚀 Funcionalidades
+## ✨ Funcionalidades
 
-- 👥 Gestão de Clientes
-- 🎯 Gestão de Leads
-- 💼 Pipeline de Vendas
-- ✅ Gestão de Tarefas
-- 📊 Dashboard com Métricas
-- 🔐 Autenticação e Autorização
-- 📱 Interface Responsiva
+- 🏠 **Landing Page Profissional** - Página inicial estilo site moderno
+- 👥 **Gestão de Clientes** - CRUD completo com informações detalhadas
+- 🎯 **Gestão de Leads** - Pipeline de vendas com status e origem
+- 💼 **Gestão de Negócios** - Controle de oportunidades e previsões
+- ✅ **Gestão de Tarefas** - Organize atividades com prioridades
+- 📊 **Dashboard Inteligente** - Métricas e estatísticas em tempo real
+- 🔐 **Autenticação JWT** - Sistema seguro de login e registro
+- 📱 **Design Responsivo** - Interface adaptável a qualquer dispositivo
+- 🎨 **UI Moderna** - Gradientes, animações e componentes elegantes
 
 ## 🛠️ Tecnologias
 
@@ -59,6 +61,19 @@ npm run dev
 ```
 
 O backend estará rodando em `http://localhost:5000` e o frontend em `http://localhost:3000`.
+
+## 🎨 Interface
+
+O sistema possui uma interface moderna tipo site profissional:
+
+- **Landing Page** (`/`) - Página inicial com apresentação do produto
+- **Login** (`/login`) - Página de autenticação
+- **Registro** (`/register`) - Página de cadastro de novos usuários
+- **Dashboard** (`/dashboard`) - Painel principal com estatísticas
+- **Clientes** (`/customers`) - Gestão de clientes
+- **Leads** (`/leads`) - Gestão de leads
+- **Negócios** (`/deals`) - Gestão de negócios
+- **Tarefas** (`/tasks`) - Gestão de tarefas
 
 ## 📖 Uso
 

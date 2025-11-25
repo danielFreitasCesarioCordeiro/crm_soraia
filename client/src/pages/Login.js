@@ -18,7 +18,7 @@ const Login = () => {
 
     try {
       await login(email, password);
-      navigate('/');
+      navigate('/dashboard');
     } catch (err) {
       setError(err.response?.data?.message || 'Erro ao fazer login');
     } finally {
@@ -28,7 +28,15 @@ const Login = () => {
 
   return (
     <div className="auth-container">
-      <div className="auth-card">
+      <div className="auth-header">
+        <Link to="/" className="auth-logo">CRM Soraia</Link>
+        <div className="auth-nav">
+          <Link to="/">Início</Link>
+          <Link to="/register">Registrar</Link>
+        </div>
+      </div>
+      <div className="auth-body">
+        <div className="auth-card">
         <h1>CRM Soraia</h1>
         <h2>Login</h2>
         {error && <div className="error-message">{error}</div>}
@@ -58,6 +66,7 @@ const Login = () => {
         <p className="auth-link">
           Não tem uma conta? <Link to="/register">Registre-se</Link>
         </p>
+        </div>
       </div>
     </div>
   );

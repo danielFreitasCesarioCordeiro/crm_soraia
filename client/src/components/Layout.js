@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
         </div>
         <ul className="nav-menu">
           <li>
-            <Link to="/" className={isActive('/')}>
+            <Link to="/dashboard" className={isActive('/dashboard')}>
               📊 Dashboard
             </Link>
           </li>

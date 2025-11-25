@@ -1,9 +1,46 @@
 .auth-container {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.auth-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.auth-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.auth-nav a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.auth-body {
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 20px;
 }
 
