@@ -1,0 +1,23 @@
+# Build settings
+[build]
+  base = "client"
+  publish = "client/build"
+  command = "npm run build"
+
+# Environment variables
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redirects
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
